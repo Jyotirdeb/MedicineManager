@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    Medicine Manager - An assistant for personal medication management.
+  ~    Copyright (C) 2016 CITIUS - USC
+  ~
+  ~    Medicine Manager is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+    <string name="recurrence_end_continously">Indefinitely</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+    <string name="recurrence_end_date_label">Until a date</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+    <string name="recurrence_end_date">Until <xliff:g id="date">%s</xliff:g></string>
+    <!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+    <string name="recurrence_end_count_label">Up to a number of doses</string>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 days) -->
+    <plurals name="recurrence_interval_daily">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">Cada <xliff:g id="count">%d</xliff:g> day</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">Cada <xliff:g id="count">%d</xliff:g> days</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks) -->
+    <plurals name="recurrence_interval_weekly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">Each <xliff:g id="count">%d</xliff:g> week</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">Each <xliff:g id="count">%d</xliff:g> weeks</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 months) -->
+    <plurals name="recurrence_interval_monthly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">Each <xliff:g id="count">%d</xliff:g> month</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">Each <xliff:g id="count">%d</xliff:g> months</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 years) -->
+    <plurals name="recurrence_interval_yearly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">Each <xliff:g id="count">%d</xliff:g> year</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">Each <xliff:g id="count">%d</xliff:g> year</item>
+    </plurals>
+    <!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+    <plurals name="recurrence_end_count">
+        <item quantity="one">\u0020Until<xliff:g id="event_count">%d</xliff:g> dose</item>
+        <item quantity="other">\u0020Until<xliff:g id="event_count">%d</xliff:g> dose</item>
+    </plurals>
+    <!-- Part of a description of an repeating event. This part states the date when a repeating
+    event ends. The part before the semi-colon describes how it repeats.
+    e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+    <string name="endByDate">\u0020(until <xliff:g id="date">%s</xliff:g>)</string>
+    <!-- Part of a description of an repeating event. This part how many times the event repeats.
+    The part before the semi-colon describes how it repeats.
+    e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+    <plurals name="endByCount">
+        <item quantity="one"> (once)</item>
+        <item quantity="other">\u0020(<xliff:g id="number">%d</xliff:g> times)</item>
+    </plurals>
+    <!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+    <plurals name="daily">
+        <item quantity="one">All the day</item>
+        <item quantity="other">Each <xliff:g id="number">%d</xliff:g> days</item>
+    </plurals>
+    <!-- A label in a multiple-choice list for the specifying that an event
+    repeats every weekday (Monday through Friday) -->
+    <string name="every_weekday">"Monday to Friday"</string>
+    <!-- A description for an event that repeats weekly on some day of the week. For example,
+    'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday. [CHAR LIMIT=25]-->
+    <plurals name="weekly">
+        <item quantity="one">Weekly, the <xliff:g id="days_of_week">%2$s</xliff:g></item>
+        <item quantity="other">Each <xliff:g id="number">%1$d</xliff:g> weeks <xliff:g id="days_of_week">%2$s</xliff:g></item>
+    </plurals>
+    <!-- The common portion of a string describing how often an event repeats,
+    example: 'Monthly (on day 2)' -->
+    <string name="monthly">Monthly</string>
+    <!-- Calendar spinner item, to select that an event recurs every year. -->
+    <string name="yearly_plain">Annually</string>
+
+    <!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+    <string name="recurrence_month_pattern_by_day">The same day of each month</string>
+
+
+    <!-- Recurrence picker: How events are to be repeated. [CHAR LIMIT = 20] -->
+    <string-array name="recurrence_freq">
+        <item>Repeat daily</item>
+        <item>Repeat weekly</item>
+        <item>Repeat monthly</item>
+        <item>Repeat annually</item>
+    </string-array>
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+    on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+    the last Sunday. These are set up like this to resolve any gender-matching issues
+    that were present in some languages.
+    -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sun">
+        <item>every first Sunday</item>
+        <item>every second Sunday</item>
+        <item>every third Sunday</item>
+        <item>every fourth Sunday</item>
+        <item>every last Sunday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_mon">
+        <item>every first Monday</item>
+        <item>every second Monday</item>
+        <item>every third Monday</item>
+        <item>every fourth Monday</item>
+        <item>every last Monday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_tues">
+        <item>every first Tuesday</item>
+        <item>every second Tuesday</item>
+        <item>every third Tuesday</item>
+        <item>every fourth Tuesday</item>
+        <item>every last Tuesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_wed">
+        <item>every first Wednesday</item>
+        <item>every second Wednesday</item>
+        <item>every third Wednesday</item>
+        <item>every fourth Wednesday</item>
+        <item>every last Wednesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_thurs">
+        <item>every first Thursday</item>
+        <item>every second Thursday</item>
+        <item>every third Thursday</item>
+        <item>every fourth Thursday</item>
+        <item>every last Thursday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_fri">
+        <item>every first Friday</item>
+        <item>every second Friday</item>
+        <item>every third Friday</item>
+        <item>every fourth Friday</item>
+        <item>every last Friday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sat">
+        <item>every first Saturday</item>
+        <item>every second Saturday</item>
+        <item>every third Saturday</item>
+        <item>every fourth Saturday</item>
+        <item>every last Saturday</item>
+    </string-array>
+
+
+</resources>
+
