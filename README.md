@@ -10,8 +10,9 @@ MedicineManager
 <br>
 <br>
 
-Medicine Manager is a simple Android game that allows the user to test their device’s VR capabilities.
-It uses Gyroscope sensors and Accelerometer sensors to test the position of the block.
-It uses Google’s VR Libraries as a native operation to function.
+Medicine Manager is an Android application that allows the user to take their medicines at the scheduled time.
+It also has an inbuilt medicine directory to help you with your dosages.
+Medicine Manager acts like an alarm to notify you about the time to take your medicine.
+Medicine Manager also has a called multi users where each user can set their medicines and when the time comes the user will get notification to take their medicines.
 
-<b>Note:</b> VR Play is a completely free and open-source app, developed as a hobby on free time by me.  I earn no money from this app, and I have zero interest in your personal data.
+<b>Note:</b> Medicine Manager is a completely free and open-source app, developed as a hobby on free time by me.  I earn no money from this app, and I have zero interest in your personal data.
